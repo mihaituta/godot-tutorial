@@ -2,8 +2,7 @@ extends Node2D
 
 var GrassEffect = preload("res://Effects/GrassEffect.tscn")
 
-func _process(delta):
-	if Input.is_action_just_pressed("attack"):
+func create_grass_effect():
 		var grassEffect = GrassEffect.instantiate()
 		
 		#the main world scene, attaching the effect to the world object
@@ -13,5 +12,7 @@ func _process(delta):
 		#attaching the effect to the grass parent
 		get_parent().add_child(grassEffect)
 		grassEffect.position = position
-		
-		queue_free()
+
+func _on_hurtbox_area_entered(area):
+	create_grass_effect()
+	queue_free()

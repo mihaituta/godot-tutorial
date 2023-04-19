@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://cdoesvoowx8eq" path="res://World/bush.tscn" id="2_3skd4"]
 [ext_resource type="Texture2D" uid="uid://b2u4diu3eaikd" path="res://World/CliffTileset.png" id="2_fu1w1"]
 [ext_resource type="PackedScene" uid="uid://cjwvq3l8h32el" path="res://Player/player.tscn" id="2_j1k7y"]
-[ext_resource type="PackedScene" uid="uid://v2wpmeqy62xr" path="res://World/grass.tscn" id="6_7rr1t"]
+[ext_resource type="PackedScene" uid="uid://b2b6yx6v4b7ev" path="res://World/grass.tscn" id="6_7rr1t"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4kes"]
 texture = ExtResource("2_1nx3j")
@@ -822,6 +822,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_u1pkb"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Clifs"
 terrain_set_0/terrain_0/color = Color(0.839216, 0.027451, 0, 1)
@@ -851,7 +852,7 @@ region_enabled = true
 region_rect = Rect2(0, 0, 320, 180)
 
 [node name="Player" parent="." instance=ExtResource("2_j1k7y")]
-position = Vector2(96, 80)
+position = Vector2(88, 64)
 
 [node name="Bushes" type="Node2D" parent="."]
 y_sort_enabled = true
@@ -880,7 +881,7 @@ position = Vector2(208, 160)
 position = Vector2(112, 88)
 
 [node name="Grass3" parent="Grass" instance=ExtResource("6_7rr1t")]
-position = Vector2(144, 128)
+position = Vector2(144, 136)
 
 [node name="Grass6" parent="Grass" instance=ExtResource("6_7rr1t")]
 position = Vector2(304, 80)
@@ -909,9 +910,6 @@ position = Vector2(168, 128)
 [node name="Grass14" parent="Grass" instance=ExtResource("6_7rr1t")]
 position = Vector2(304, 0)
 
-[node name="Grass15" parent="Grass" instance=ExtResource("6_7rr1t")]
-position = Vector2(304, 0)
-
 [node name="Grass7" parent="Grass" instance=ExtResource("6_7rr1t")]
 position = Vector2(32, 32)
 
@@ -922,7 +920,7 @@ position = Vector2(272, 32)
 position = Vector2(144, 32)
 
 [node name="Grass12" parent="Grass" instance=ExtResource("6_7rr1t")]
-position = Vector2(144, 32)
+position = Vector2(176, 48)
 
 [node name="Grass10" parent="Grass" instance=ExtResource("6_7rr1t")]
 position = Vector2(240, 0)
