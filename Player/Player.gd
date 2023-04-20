@@ -1,14 +1,14 @@
 extends CharacterBody2D
 
-const ACCELERATION = 500
-const MAX_SPEED = 80
-const ROLL_SPEED = 120
-const FRICTION = 600
+@export var ACCELERATION = 600
+@export var MAX_SPEED = 80
+@export var ROLL_SPEED = 120
+@export var FRICTION = 700
 
 enum {MOVE, ROLL, ATTACK}
 
 var state = MOVE
-var roll_vector = Vector2.LEFT
+var roll_vector = Vector2.DOWN
 
 @onready var animationPlayer = $AnimationPlayer
 @onready var animationTree = $AnimationTree
