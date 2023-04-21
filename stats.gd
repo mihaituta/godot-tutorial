@@ -10,4 +10,3 @@ extends Node
 			emit_signal("no_health")
 			
 signal no_health
- 

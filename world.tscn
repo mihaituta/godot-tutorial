@@ -1,12 +1,12 @@
-[gd_scene load_steps=12 format=3 uid="uid://bdu7seaehe678"]
+[gd_scene load_steps=12 format=3 uid="uid://c7jntrh48o3rx"]
 
-[ext_resource type="Texture2D" uid="uid://dckn6ghr7xslc" path="res://World/GrassBackground.png" id="1_wa0tb"]
-[ext_resource type="Texture2D" uid="uid://dkiq7y8f5gmhh" path="res://World/DirtTileset.png" id="2_1nx3j"]
-[ext_resource type="PackedScene" uid="uid://cdoesvoowx8eq" path="res://World/bush.tscn" id="2_3skd4"]
-[ext_resource type="Texture2D" uid="uid://b2u4diu3eaikd" path="res://World/CliffTileset.png" id="2_fu1w1"]
+[ext_resource type="Texture2D" uid="uid://dckn6ghr7xslc" path="res://Enemies/World/GrassBackground.png" id="1_wa0tb"]
+[ext_resource type="Texture2D" uid="uid://dkiq7y8f5gmhh" path="res://Enemies/World/DirtTileset.png" id="2_1nx3j"]
+[ext_resource type="PackedScene" uid="uid://dculynmdurhtm" path="res://Enemies/World/bush.tscn" id="2_3skd4"]
+[ext_resource type="Texture2D" uid="uid://b2u4diu3eaikd" path="res://Enemies/World/CliffTileset.png" id="2_fu1w1"]
 [ext_resource type="PackedScene" uid="uid://cjwvq3l8h32el" path="res://Player/player.tscn" id="2_j1k7y"]
-[ext_resource type="PackedScene" uid="uid://b2b6yx6v4b7ev" path="res://World/grass.tscn" id="6_7rr1t"]
-[ext_resource type="PackedScene" uid="uid://w2ppjy6dy6pi" path="res://Enemies/bat.tscn" id="7_roowa"]
+[ext_resource type="PackedScene" path="res://Enemies/World/grass.tscn" id="6_7rr1t"]
+[ext_resource type="PackedScene" uid="uid://dn0fyvrastjgx" path="res://Enemies/bat.tscn" id="7_roowa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w4kes"]
 texture = ExtResource("2_1nx3j")
@@ -822,8 +822,7 @@ texture_region_size = Vector2i(32, 32)
 
 [sub_resource type="TileSet" id="TileSet_u1pkb"]
 tile_size = Vector2i(32, 32)
-physics_layer_0/collision_layer = 1
-physics_layer_0/collision_mask = 0
+physics_layer_0/collision_layer = 2
 terrain_set_0/mode = 0
 terrain_set_0/terrain_0/name = "Clifs"
 terrain_set_0/terrain_0/color = Color(0.839216, 0.027451, 0, 1)

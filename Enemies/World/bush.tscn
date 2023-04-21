@@ -1,12 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://cdoesvoowx8eq"]
+[gd_scene load_steps=3 format=3 uid="uid://dculynmdurhtm"]
 
-[ext_resource type="Texture2D" uid="uid://d11lgtshybbay" path="res://World/Bush.png" id="1_ptio2"]
+[ext_resource type="Texture2D" uid="uid://d11lgtshybbay" path="res://Enemies/World/Bush.png" id="1_ptio2"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ej7ta"]
 radius = 8.0
 height = 28.0
 
 [node name="Bush" type="StaticBody2D"]
+collision_layer = 2
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
