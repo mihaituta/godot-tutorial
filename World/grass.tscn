@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://c3sip0yrjh2d6"]
 
-[ext_resource type="Script" path="res://Enemies/World/Grass.gd" id="1_jswad"]
-[ext_resource type="Texture2D" uid="uid://3xdtkwyfqrh7" path="res://Enemies/World/Grass.png" id="1_ot7v5"]
+[ext_resource type="Script" path="res://World/Grass.gd" id="1_jswad"]
+[ext_resource type="Texture2D" uid="uid://3xdtkwyfqrh7" path="res://World/Grass.png" id="1_ot7v5"]
 [ext_resource type="PackedScene" uid="uid://dbemf1nchso4q" path="res://Overlap/hurtbox.tscn" id="3_nqrld"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q2pkl"]
@@ -17,7 +17,6 @@ offset = Vector2(-8, -8)
 
 [node name="Hurtbox" parent="." instance=ExtResource("3_nqrld")]
 collision_mask = 8
-show_hit = false
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2(8, 8)

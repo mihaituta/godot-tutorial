@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dckn6ghr7xslc"
-path="res://.godot/imported/GrassBackground.png-ccc8a40fd06dc7efb8752455517ed3d2.ctex"
+uid="uid://d11lgtshybbay"
+path="res://.godot/imported/Bush.png-d93cca107fd3c67cf3a69a32232496ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/World/GrassBackground.png"
-dest_files=["res://.godot/imported/GrassBackground.png-ccc8a40fd06dc7efb8752455517ed3d2.ctex"]
+source_file="res://World/Bush.png"
+dest_files=["res://.godot/imported/Bush.png-d93cca107fd3c67cf3a69a32232496ae.ctex"]
 
 [params]
 

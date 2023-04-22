@@ -26,6 +26,7 @@ animations = [{
 }]
 
 [node name="HitEffect" type="AnimatedSprite2D"]
+y_sort_enabled = true
 sprite_frames = SubResource("SpriteFrames_1wrmk")
 animation = &"Animate"
 offset = Vector2(0, -8)

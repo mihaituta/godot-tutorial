@@ -21,10 +21,6 @@ var knockback = Vector2.ZERO
 @onready var sprite = $AnimatedSprite
 @onready var hurtbox = $Hurtbox
 
-func _ready():
-	print(stats.max_health)
-	print(stats.health)
-
 func _physics_process(delta):
 	set_knockback_velocity(delta)
 	

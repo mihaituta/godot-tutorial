@@ -19,10 +19,7 @@ var stats = PlayerStats
 
 #runs after everything is loaded
 func _ready():
-	#stats.connect("no_health", queue_free )
-	
 	stats.no_health.connect(queue_free)
-	
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
 
@@ -85,5 +82,5 @@ func attack_animation_finished():
 
 func _on_hurtbox_area_entered(area):
 	stats.health -= 1
-	hurtbox.start_invincibility(0.5)
+	hurtbox.start_invincibility(1)
 	hurtbox.create_hit_effect()

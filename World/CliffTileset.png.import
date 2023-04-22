@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bo1fia3nmq37v"
-path="res://.godot/imported/Tree.png-c45ddeca16c67eb8186346ff30ffb16d.ctex"
+uid="uid://b2u4diu3eaikd"
+path="res://.godot/imported/CliffTileset.png-beb1369a7815e4e7ee0afe974b2636cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Enemies/World/Tree.png"
-dest_files=["res://.godot/imported/Tree.png-c45ddeca16c67eb8186346ff30ffb16d.ctex"]
+source_file="res://World/CliffTileset.png"
+dest_files=["res://.godot/imported/CliffTileset.png-beb1369a7815e4e7ee0afe974b2636cf.ctex"]
 
 [params]
 
