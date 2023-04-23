@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://b5qoi5u25a4xk"]
+[gd_scene load_steps=15 format=3 uid="uid://b5qoi5u25a4xk"]
 
 [ext_resource type="Texture2D" uid="uid://dckn6ghr7xslc" path="res://World/GrassBackground.png" id="1_wa0tb"]
 [ext_resource type="Texture2D" uid="uid://dkiq7y8f5gmhh" path="res://World/DirtTileset.png" id="2_1nx3j"]
 [ext_resource type="PackedScene" uid="uid://bibhy07w6t4ii" path="res://World/bush.tscn" id="2_3skd4"]
 [ext_resource type="Texture2D" uid="uid://b2u4diu3eaikd" path="res://World/CliffTileset.png" id="2_fu1w1"]
 [ext_resource type="PackedScene" uid="uid://cjwvq3l8h32el" path="res://Player/player.tscn" id="2_j1k7y"]
+[ext_resource type="PackedScene" uid="uid://ph5c1choro70" path="res://camera_2d.tscn" id="4_ro2qa"]
 [ext_resource type="PackedScene" uid="uid://c3sip0yrjh2d6" path="res://World/grass.tscn" id="6_7rr1t"]
 [ext_resource type="PackedScene" uid="uid://dn0fyvrastjgx" path="res://Enemies/bat.tscn" id="7_roowa"]
 [ext_resource type="PackedScene" uid="uid://cs82jx820wkmm" path="res://World/tree.tscn" id="7_w44q4"]
@@ -848,18 +849,22 @@ layer_0/tile_data = PackedInt32Array(0, 589824, 1, 1, 65536, 2, 2, 65536, 2, 3, 
 z_index = -1
 z_as_relative = false
 texture_repeat = 2
-position = Vector2(120, 88)
+position = Vector2(128, 89)
 texture = ExtResource("1_wa0tb")
 region_enabled = true
 region_rect = Rect2(0, 0, 800, 500)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(96, 72)
-process_callback = 0
-position_smoothing_enabled = true
+[node name="Camera2D" parent="." instance=ExtResource("4_ro2qa")]
+position = Vector2(120, 72)
+
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2(-32, -32)
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2(352, 192)
 
 [node name="Player" parent="." instance=ExtResource("2_j1k7y")]
-position = Vector2(96, 72)
+position = Vector2(120, 72)
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player"]
 remote_path = NodePath("../../Camera2D")
@@ -984,3 +989,5 @@ offset_left = 4.0
 offset_top = 4.0
 offset_right = 44.0
 offset_bottom = 44.0
+
+[editable path="Camera2D"]

@@ -1,0 +1,8 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://r6qooofnfhw8"]
+
+[ext_resource type="Shader" path="res://Player/player.gdshader" id="1_hqhtr"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_hqhtr")
+shader_parameter/active = false
